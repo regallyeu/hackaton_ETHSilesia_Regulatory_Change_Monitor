@@ -1,0 +1,20 @@
+services:
+  hardhat:
+    build:
+      context: ../..
+      dockerfile: docker/hardhat/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8545:8545"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf -X POST --data '{\"jsonrpc\":\"2.0\",\"method\":\"net_version\",\"params\":[],\"id\":1}' http://localhost:8545 || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    networks:
+      - hackaton_net
+
+networks:
+  hackaton_net:
+    external: true
+    name: hackaton_net

@@ -1,0 +1,51 @@
+{
+  "page": {
+    "title": "Baza aktów prawnych ISAP",
+    "subtitle": "{{total}} aktów w bazie"
+  },
+  "filters": {
+    "inForce": "Status obowiązywania",
+    "docType": "Typ dokumentu",
+    "searchPlaceholder": "Tytuł, adres lub słowo kluczowe…",
+    "allStatuses": "Wszystkie",
+    "allTypes": "Wszystkie typy"
+  },
+  "inForce": {
+    "IN_FORCE": "Obowiązuje",
+    "NOT_IN_FORCE": "Nieobowiązujący",
+    "REPEALED": "Uchylony",
+    "EXPIRED": "Wygasły"
+  },
+  "docType": {
+    "Ustawa": "Ustawa",
+    "Rozporządzenie": "Rozporządzenie",
+    "Obwieszczenie": "Obwieszczenie",
+    "Uchwała": "Uchwała",
+    "Zarządzenie": "Zarządzenie",
+    "Komunikat": "Komunikat",
+    "Decyzja": "Decyzja"
+  },
+  "table": {
+    "act": "Akt prawny",
+    "type": "Typ",
+    "status": "Status",
+    "topics": "Tematy",
+    "published": "Opublikowano",
+    "expires": "Wygasa",
+    "showing": "Wyświetlono {{from}}–{{to}} z {{total}} aktów"
+  },
+  "detail": {
+    "announcementDate": "Data ogłoszenia",
+    "expirationDate": "Data wygaśnięcia",
+    "address": "Adres",
+    "eli": "ELI",
+    "topics": "Tematy",
+    "entities": "Podmioty"
+  },
+  "empty": {
+    "noResults": "Brak aktów spełniających kryteria"
+  },
+  "errors": {
+    "load": "Nie udało się załadować aktów. Sprawdź połączenie z backendem."
+  }
+}

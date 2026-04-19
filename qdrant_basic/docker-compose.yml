@@ -1,0 +1,31 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.12.5
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_basic_storage:/qdrant/storage
+
+  # Swagger: http://localhost:8080/docs | OpenAPI: /openapi.json
+  rag-api:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      QDRANT_URL: http://qdrant:6333
+    depends_on:
+      - qdrant
+    networks:
+      - default
+      - hackaton_net
+
+volumes:
+  qdrant_basic_storage:
+
+networks:
+  hackaton_net:
+    external: true
+    name: hackaton_net

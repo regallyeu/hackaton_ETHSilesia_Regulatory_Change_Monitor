@@ -1,0 +1,30 @@
+services:
+  crawler:
+    build:
+      context: ../..
+      dockerfile: docker/crawler/Dockerfile
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017/
+      ISAP_YEAR_FROM: ${ISAP_YEAR_FROM:-2026}
+      ISAP_YEAR_TO: ${ISAP_YEAR_TO:-2026}
+      ISAP_PUBLISHER: ${ISAP_PUBLISHER:-DU}
+      ISAP_MONGO_DB: ${ISAP_MONGO_DB:-legal_acts}
+      ISAP_MONGO_COLLECTION: ${ISAP_MONGO_COLLECTION:-isap}
+      ISAP_CHANGES_COLLECTION: ${ISAP_CHANGES_COLLECTION:-changes}
+      ISAP_HTML_DIR: /isap_data
+      ISAP_SLEEP: ${ISAP_SLEEP:-0.15}
+      SKIP_HTML: ${SKIP_HTML:-}
+      SKIP_PDF: ${SKIP_PDF:-}
+    volumes:
+      - isap_data:/isap_data
+    networks:
+      - hackaton_net
+
+volumes:
+  isap_data:
+    name: hackaton_isap_data
+
+networks:
+  hackaton_net:
+    external: true
+    name: hackaton_net

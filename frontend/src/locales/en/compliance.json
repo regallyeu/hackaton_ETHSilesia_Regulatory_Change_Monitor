@@ -1,0 +1,24 @@
+{
+  "page": {
+    "title": "Compliance: statute vs contract",
+    "subtitle": "Paste a legal fragment and upload your contract file — RAG analysis (same endpoint as in Swagger).",
+    "hint": "You need this app (Vite), the API on :8000, and the RAG service in qdrant_basic on :8080 (browser calls /rag → API proxy)."
+  },
+  "form": {
+    "ustawa": "Statute text / fragment",
+    "ustawaPlaceholder": "Paste the legal text you want to check the contract against…",
+    "file": "Contract file",
+    "fileHint": "PDF with a text layer, .txt, or .md",
+    "submit": "Run analysis",
+    "submitting": "Analyzing…"
+  },
+  "result": {
+    "title": "Response",
+    "empty": "API JSON will appear here (answer / answer_raw, character counts, etc.)."
+  },
+  "error": {
+    "generic": "Request failed.",
+    "detail": "Details",
+    "missing": "Add the statute text and choose a contract file."
+  }
+}

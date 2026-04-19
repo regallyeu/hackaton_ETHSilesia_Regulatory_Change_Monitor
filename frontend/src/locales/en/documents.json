@@ -1,0 +1,28 @@
+{
+  "title": "Change Proposal Review",
+  "subtitle": "{{answered}} / {{total}} responses",
+  "closeLabel": "Close",
+  "preview": "Preview",
+  "noProposals": "No change proposals for this document.",
+  "status": {
+    "accepted": "Accepted",
+    "rejected": "Rejected",
+    "edited": "Edited"
+  },
+  "proposal": {
+    "originalText": "Current text",
+    "proposedChange": "Proposed change",
+    "editedText": "Edited text"
+  },
+  "actions": {
+    "accept": "Accept",
+    "reject": "Reject",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel",
+    "changeAnswer": "Change answer",
+    "sign": "Sign blockchain",
+    "remaining": "({{count}} remaining)"
+  },
+  "signed": "Signed blockchain"
+}

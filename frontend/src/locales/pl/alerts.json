@@ -1,0 +1,168 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "lastScan": "Ostatni skan:",
+    "monitoredSources": "{{count}} monitorowanych źródeł",
+    "recentAlerts": "Ostatnie alerty",
+    "noAlerts": "Brak alertów.",
+    "expiringSoon": "Wkrótce wygasają ({{count}})",
+    "monitoredSourcesTitle": "Monitorowane źródła",
+    "stats": {
+      "totalAlerts": "Wszystkich alertów",
+      "highRisk": "Wysokie ryzyko",
+      "pendingReview": "Do przeglądu",
+      "pendingReviewSub": "oczekuje na działanie",
+      "resolvedThisMonth": "Rozwiązanych w miesiącu",
+      "inForce": "Aktów w mocy",
+      "inForceSub": "obowiązujące"
+    }
+  },
+  "page": {
+    "title": "Alerty",
+    "subtitle": "{{total}} aktów prawnych"
+  },
+  "filters": {
+    "changeType": "Typ zmiany",
+    "minRisk": "Min. ryzyko: {{value}}",
+    "minRiskNone": "Min. ryzyko: —",
+    "searchPlaceholder": "Tytuł lub numer aktu…",
+    "allTypes": "Wszystkie typy"
+  },
+  "changeType": {
+    "new_regulation": "Nowe rozporządzenie",
+    "amendment": "Nowelizacja",
+    "repeal": "Uchylenie",
+    "guidance": "Wytyczne"
+  },
+  "table": {
+    "risk": "Ryzyko",
+    "act": "Akt prawny",
+    "changeType": "Typ zmiany",
+    "changes": "Zmiany",
+    "topics": "Tematy",
+    "published": "Opublikowano",
+    "detected": "Wykryto",
+    "showing": "Wyświetlono {{from}}–{{to}} z {{total}} alertów"
+  },
+  "risk": {
+    "critical": "KRYTYCZNY",
+    "high": "WYSOKI",
+    "medium": "ŚREDNI",
+    "low": "NISKI"
+  },
+  "status": {
+    "new": "Nowy",
+    "reviewing": "W analizie",
+    "resolved": "Rozwiązany",
+    "ignored": "Pominięty"
+  },
+  "empty": {
+    "noResults": "Brak aktów spełniających kryteria"
+  },
+  "errors": {
+    "load": "Nie udało się załadować alertów. Sprawdź połączenie z backendem."
+  },
+  "timeAgo": {
+    "minutes": "{{count}} min temu",
+    "hours": "{{count}} godz. temu",
+    "days": "{{count}} dni temu"
+  },
+  "detail": {
+    "backToAlerts": "← Wróć do alertów",
+    "notFound": "Alert nie znaleziony.",
+    "publishedAt": "Opublikowano:",
+    "detectedAt": "Wykryto:",
+    "tabs": {
+      "detail": "Szczegóły",
+      "graph": "Powiązania",
+      "history": "Historia zmian ({{count}})"
+    },
+    "sections": {
+      "aiAnalysis": "Analiza AI",
+      "legalChanges": "Zmiany w tekście prawnym ({{count}})",
+      "affectedClauses": "Dotknięte klauzule ({{count}})",
+      "suggestedAction": "Sugerowane działanie",
+      "yourDocuments": "Twoje dokumenty"
+    },
+    "blockchain": {
+      "title": "Dowód blockchain",
+      "verified": "✓ Zweryfikowany",
+      "network": "Sieć",
+      "block": "Blok",
+      "timestamp": "Timestamp",
+      "txHash": "TX Hash",
+      "pending": "Zapisywanie on-chain…",
+      "notAnchored": "Alert nie został jeszcze zapisany on-chain.",
+      "label": "Blockchain",
+      "contentHint": "Osobno od rejestru odczytu: zapisuje digest treści alertu (integralność), gdy tego potrzebujesz.",
+      "anchorContent": "Zapisz digest treści on-chain"
+    },
+    "readReceipt": {
+      "title": "Rejestr odczytu (audyt)",
+      "description": "Każde otwarcie tej strony wysyła zdarzenie do API i kotwiczy na blockchainie hash (alert, czas, identyfikator przeglądarki) — niepodważalny znacznik dla compliance.",
+      "recording": "Rejestrowanie odczytu…",
+      "error": "Nie udało się zarejestrować odczytu.",
+      "empty": "Po zapisie pojawi się tu wpis z czasem i skrótem transakcji.",
+      "viewer": "Identyfikator widoku",
+      "at": "Odczyt"
+    },
+    "upload": {
+      "pending": "Wgrywam…",
+      "ready": "+ Wgraj dokument"
+    },
+    "docStatus": {
+      "signed": "✓ Podpisano",
+      "reviewed": "Gotowy do podpisu"
+    },
+    "graphDescription": "Graf pokazuje jak akt prawny propaguje się na alerty i dotknięte klauzule kontraktów.",
+    "historyDescription": "Chronologiczna historia wszystkich aktów zmieniających ten sam dokument bazowy.",
+    "current": "(bieżąca)"
+  },
+  "rodzaj": {
+    "dodanie_po_punkcie": "Dodanie",
+    "zastapienie_wyrazow_w_ustepie": "Zastąpienie",
+    "uchylenie": "Uchylenie",
+    "nieokreślone": "Zmiana"
+  },
+  "history": {
+    "changes_one": "{{count}} zmiana",
+    "changes_few": "{{count}} zmiany",
+    "changes_many": "{{count}} zmian"
+  },
+  "graph": {
+    "risk": "Ryzyko {{level}}/10",
+    "aiRelevance": "Trafność AI: {{pct}}%",
+    "savedOnChain": "⛓ Zapisany on-chain",
+    "nodeType": {
+      "alert": "Alert",
+      "primary_law": "Akt pierwotny",
+      "related_law": "Ustawa powiązana",
+      "clause": "Klauzula kontraktu",
+      "directive": "Dyrektywa UE",
+      "reference_law": "Podstawa prawna",
+      "amended_act": "Akt zmieniany"
+    },
+    "legend": {
+      "primary_law": "Akt pierwotny",
+      "directive": "Dyrektywa UE",
+      "reference_law": "Podstawa prawna",
+      "amended_act": "Akt zmieniany",
+      "affects": "Wpływ na klauzulę"
+    }
+  },
+  "regulationMap": {
+    "changeType": {
+      "amendment": "Nowelizacja",
+      "new_regulation": "Nowe rozp.",
+      "guidance": "Wytyczne",
+      "repeal": "Uchylenie"
+    },
+    "aiConfidence": "AI trafność: {{pct}}%",
+    "columns": {
+      "source": { "title": "ŹRÓDŁA", "sub": "monitorowane" },
+      "act": { "title": "AKTY PRAWNE", "sub": "wykryte dokumenty" },
+      "alert": { "title": "ALERTY AI", "sub": "analiza ryzyka" },
+      "contract": { "title": "KONTRAKTY", "sub": "dotknięte klauzule" }
+    }
+  }
+}

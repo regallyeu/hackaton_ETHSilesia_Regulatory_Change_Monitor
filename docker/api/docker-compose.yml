@@ -1,0 +1,27 @@
+services:
+  api:
+    build:
+      context: ../..
+      dockerfile: docker/api/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      ANCHOR_BACKEND: ${ANCHOR_BACKEND:-stub}
+      # Z kontenera 127.0.0.1 = ten kontener, NIE RAG na hoście. Docker Desktop (Windows/Mac):
+      RAG_SERVICE_URL: ${RAG_SERVICE_URL:-http://qdrant_basic-rag-api-1:8080}
+      MONGODB_URI: mongodb://mongodb:27017/
+      ISAP_MONGO_DB: ${ISAP_MONGO_DB:-legal_acts}
+      ISAP_CHANGES_COLLECTION: ${ISAP_CHANGES_COLLECTION:-changes}
+      ISAP_MONGO_COLLECTION: ${ISAP_MONGO_COLLECTION:-isap}
+    command: uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+    volumes:
+      - ../../app:/app/app
+      - ../../blockchain:/app/blockchain
+    networks:
+      - hackaton_net
+
+networks:
+  hackaton_net:
+    external: true
+    name: hackaton_net

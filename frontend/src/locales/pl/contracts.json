@@ -1,0 +1,28 @@
+{
+  "page": {
+    "title": "Kontrakty",
+    "subtitle": "{{count}} monitorowanych kontraktów",
+    "loadError": "Nie udało się pobrać listy kontraktów z API."
+  },
+  "table": {
+    "contract": "Kontrakt",
+    "type": "Typ",
+    "validUntil": "Ważny do",
+    "alerts": "Alerty"
+  },
+  "type": {
+    "PPA": "Power Purchase Agreement",
+    "grid_connection": "Przyłączenie do sieci",
+    "supply": "Dostawa energii",
+    "service": "Usługi"
+  },
+  "signed": {
+    "title": "Dokumenty podpisane",
+    "subtitle": "Dokumenty podpisane kryptograficznie przez blockchain.",
+    "empty": {
+      "title": "Brak podpisanych dokumentów.",
+      "hint": "Przeglądaj alerty i wgraj dokumenty do analizy."
+    },
+    "signedAt": "Podpisano: {{date}}"
+  }
+}

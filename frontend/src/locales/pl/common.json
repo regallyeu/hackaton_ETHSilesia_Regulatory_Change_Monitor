@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "alerts": "Alerty",
+    "isap": "Baza ISAP",
+    "contracts": "Kontrakty",
+    "signedDocuments": "Dokumenty podpisane",
+    "certificates": "Certyfikaty",
+    "compliance": "Zgodność (RAG)"
+  },
+  "monitoring": {
+    "active": "Monitoring aktywny"
+  },
+  "filters": {
+    "search": "Szukaj",
+    "clearFilters": "Wyczyść filtry"
+  },
+  "actions": {
+    "cancel": "Anuluj",
+    "save": "Zapisz",
+    "download": "Pobierz",
+    "showAll": "Pokaż wszystkie →",
+    "changeAnswer": "Zmień odpowiedź",
+    "collapse": "Zwiń ▲",
+    "expand": "Rozwiń ▼"
+  },
+  "pagination": {
+    "previous": "← Poprzednia",
+    "next": "Następna →"
+  },
+  "labels": {
+    "topics": "Tematy",
+    "entities": "Podmioty",
+    "source": "Źródło",
+    "address": "Adres",
+    "eli": "ELI",
+    "relevance": "Trafność"
+  }
+}

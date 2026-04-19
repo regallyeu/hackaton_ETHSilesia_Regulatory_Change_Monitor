@@ -1,0 +1,51 @@
+{
+  "page": {
+    "title": "ISAP Legal Acts Database",
+    "subtitle": "{{total}} acts in database"
+  },
+  "filters": {
+    "inForce": "Force status",
+    "docType": "Document type",
+    "searchPlaceholder": "Title, address or keyword…",
+    "allStatuses": "All",
+    "allTypes": "All types"
+  },
+  "inForce": {
+    "IN_FORCE": "In force",
+    "NOT_IN_FORCE": "Not in force",
+    "REPEALED": "Repealed",
+    "EXPIRED": "Expired"
+  },
+  "docType": {
+    "Ustawa": "Act",
+    "Rozporządzenie": "Regulation",
+    "Obwieszczenie": "Announcement",
+    "Uchwała": "Resolution",
+    "Zarządzenie": "Order",
+    "Komunikat": "Communiqué",
+    "Decyzja": "Decision"
+  },
+  "table": {
+    "act": "Legal act",
+    "type": "Type",
+    "status": "Status",
+    "topics": "Topics",
+    "published": "Published",
+    "expires": "Expires",
+    "showing": "Showing {{from}}–{{to}} of {{total}} acts"
+  },
+  "detail": {
+    "announcementDate": "Announcement date",
+    "expirationDate": "Expiration date",
+    "address": "Address",
+    "eli": "ELI",
+    "topics": "Topics",
+    "entities": "Entities"
+  },
+  "empty": {
+    "noResults": "No acts matching criteria"
+  },
+  "errors": {
+    "load": "Failed to load acts. Check backend connection."
+  }
+}

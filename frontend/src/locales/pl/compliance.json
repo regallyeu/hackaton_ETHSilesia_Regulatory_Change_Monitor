@@ -1,0 +1,24 @@
+{
+  "page": {
+    "title": "Zgodność: ustawa vs umowa",
+    "subtitle": "Wklejasz fragment normy i wgrywasz plik umowy — analiza przez RAG (ten sam endpoint co w Swaggerze).",
+    "hint": "Potrzebne są jednocześnie: to okno (Vite), API na :8000 oraz serwis RAG w qdrant_basic na :8080 (proxy /rag → API)."
+  },
+  "form": {
+    "ustawa": "Treść / fragment ustawy",
+    "ustawaPlaceholder": "Wklej fragment aktu prawnego, np. brzmienie nowelizowanego przepisu…",
+    "file": "Plik umowy",
+    "fileHint": "PDF z warstwą tekstu, .txt lub .md",
+    "submit": "Wyślij do analizy",
+    "submitting": "Analiza w toku…"
+  },
+  "result": {
+    "title": "Odpowiedź",
+    "empty": "Tu pojawi się JSON z API (answer / answer_raw, liczniki znaków itd.)."
+  },
+  "error": {
+    "generic": "Żądanie nie powiodło się.",
+    "detail": "Szczegóły",
+    "missing": "Uzupełnij treść ustawy i wybierz plik umowy."
+  }
+}

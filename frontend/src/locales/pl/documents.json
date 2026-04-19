@@ -1,0 +1,28 @@
+{
+  "title": "Przegląd propozycji zmian",
+  "subtitle": "{{answered}} / {{total}} odpowiedzi",
+  "closeLabel": "Zamknij",
+  "preview": "Podgląd",
+  "noProposals": "Brak propozycji zmian dla tego dokumentu.",
+  "status": {
+    "accepted": "Zaakceptowano",
+    "rejected": "Odrzucono",
+    "edited": "Edytowano"
+  },
+  "proposal": {
+    "originalText": "Obecny tekst",
+    "proposedChange": "Proponowana zmiana",
+    "editedText": "Edytowany tekst"
+  },
+  "actions": {
+    "accept": "Akceptuj",
+    "reject": "Odrzuć",
+    "edit": "Edytuj",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "changeAnswer": "Zmień odpowiedź",
+    "sign": "Podpisz blockchain",
+    "remaining": "({{count}} pozostało)"
+  },
+  "signed": "Podpisano blockchain"
+}

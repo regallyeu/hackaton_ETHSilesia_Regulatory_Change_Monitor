@@ -1,0 +1,167 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "lastScan": "Last scan:",
+    "monitoredSources": "{{count}} monitored sources",
+    "recentAlerts": "Recent alerts",
+    "noAlerts": "No alerts.",
+    "expiringSoon": "Expiring soon ({{count}})",
+    "monitoredSourcesTitle": "Monitored sources",
+    "stats": {
+      "totalAlerts": "Total alerts",
+      "highRisk": "High risk",
+      "pendingReview": "Pending review",
+      "pendingReviewSub": "awaiting action",
+      "resolvedThisMonth": "Resolved this month",
+      "inForce": "Acts in force",
+      "inForceSub": "active"
+    }
+  },
+  "page": {
+    "title": "Alerts",
+    "subtitle": "{{total}} legal acts"
+  },
+  "filters": {
+    "changeType": "Change type",
+    "minRisk": "Min. risk: {{value}}",
+    "minRiskNone": "Min. risk: —",
+    "searchPlaceholder": "Title or act number…",
+    "allTypes": "All types"
+  },
+  "changeType": {
+    "new_regulation": "New regulation",
+    "amendment": "Amendment",
+    "repeal": "Repeal",
+    "guidance": "Guidance"
+  },
+  "table": {
+    "risk": "Risk",
+    "act": "Legal act",
+    "changeType": "Change type",
+    "changes": "Changes",
+    "topics": "Topics",
+    "published": "Published",
+    "detected": "Detected",
+    "showing": "Showing {{from}}–{{to}} of {{total}} alerts"
+  },
+  "risk": {
+    "critical": "CRITICAL",
+    "high": "HIGH",
+    "medium": "MEDIUM",
+    "low": "LOW"
+  },
+  "status": {
+    "new": "New",
+    "reviewing": "Under review",
+    "resolved": "Resolved",
+    "ignored": "Ignored"
+  },
+  "empty": {
+    "noResults": "No acts matching criteria"
+  },
+  "errors": {
+    "load": "Failed to load alerts. Check backend connection."
+  },
+  "timeAgo": {
+    "minutes": "{{count}} min ago",
+    "hours": "{{count}} hr ago",
+    "days": "{{count}} days ago"
+  },
+  "detail": {
+    "backToAlerts": "← Back to alerts",
+    "notFound": "Alert not found.",
+    "publishedAt": "Published:",
+    "detectedAt": "Detected:",
+    "tabs": {
+      "detail": "Details",
+      "graph": "Relations",
+      "history": "Change history ({{count}})"
+    },
+    "sections": {
+      "aiAnalysis": "AI Analysis",
+      "legalChanges": "Legal text changes ({{count}})",
+      "affectedClauses": "Affected clauses ({{count}})",
+      "suggestedAction": "Suggested action",
+      "yourDocuments": "Your documents"
+    },
+    "blockchain": {
+      "title": "Blockchain proof",
+      "verified": "✓ Verified",
+      "network": "Network",
+      "block": "Block",
+      "timestamp": "Timestamp",
+      "txHash": "TX Hash",
+      "pending": "Saving on-chain…",
+      "notAnchored": "Alert has not been saved on-chain yet.",
+      "label": "Blockchain",
+      "contentHint": "Separate from read receipts: anchors a digest of the alert content when you need integrity proof.",
+      "anchorContent": "Anchor content digest on-chain"
+    },
+    "readReceipt": {
+      "title": "Read log (audit)",
+      "description": "Each time you open this page, the app records a read event and anchors a hash (alert, time, browser-held id) on-chain for compliance.",
+      "recording": "Recording read…",
+      "error": "Could not record the read event.",
+      "empty": "After anchoring, entries will appear here with time and a short transaction id.",
+      "viewer": "Viewer id",
+      "at": "Read at"
+    },
+    "upload": {
+      "pending": "Uploading…",
+      "ready": "+ Upload document"
+    },
+    "docStatus": {
+      "signed": "✓ Signed",
+      "reviewed": "Ready to sign"
+    },
+    "graphDescription": "The graph shows how the legal act propagates to alerts and affected contract clauses.",
+    "historyDescription": "Chronological history of all acts amending the same base document.",
+    "current": "(current)"
+  },
+  "rodzaj": {
+    "dodanie_po_punkcie": "Addition",
+    "zastapienie_wyrazow_w_ustepie": "Replacement",
+    "uchylenie": "Repeal",
+    "nieokreślone": "Change"
+  },
+  "history": {
+    "changes_one": "{{count}} change",
+    "changes_other": "{{count}} changes"
+  },
+  "graph": {
+    "risk": "Risk {{level}}/10",
+    "aiRelevance": "AI Relevance: {{pct}}%",
+    "savedOnChain": "⛓ Saved on-chain",
+    "nodeType": {
+      "alert": "Alert",
+      "primary_law": "Primary act",
+      "related_law": "Related act",
+      "clause": "Contract clause",
+      "directive": "EU Directive",
+      "reference_law": "Legal basis",
+      "amended_act": "Amended act"
+    },
+    "legend": {
+      "primary_law": "Primary act",
+      "directive": "EU Directive",
+      "reference_law": "Legal basis",
+      "amended_act": "Amended act",
+      "affects": "Impact on clause"
+    }
+  },
+  "regulationMap": {
+    "changeType": {
+      "amendment": "Amendment",
+      "new_regulation": "New reg.",
+      "guidance": "Guidance",
+      "repeal": "Repeal"
+    },
+    "aiConfidence": "AI confidence: {{pct}}%",
+    "columns": {
+      "source": { "title": "SOURCES", "sub": "monitored" },
+      "act": { "title": "LEGAL ACTS", "sub": "detected documents" },
+      "alert": { "title": "AI ALERTS", "sub": "risk analysis" },
+      "contract": { "title": "CONTRACTS", "sub": "affected clauses" }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "regulatory-anchor-evm",
+  "private": true,
+  "scripts": {
+    "node": "hardhat node",
+    "compile": "hardhat compile",
+    "deploy:local": "hardhat run scripts/deploy.cjs --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "5.0.0",
+    "hardhat": "2.28.0"
+  }
+}

@@ -1,0 +1,33 @@
+services:
+  extract:
+    build:
+      context: ../..
+      dockerfile: docker/extract/Dockerfile
+    command: >
+      python isap_extract_changes.py
+        --mongodb-uri mongodb://mongodb:27017/
+        --db ${ISAP_MONGO_DB:-legal_acts}
+        --isap-collection ${ISAP_MONGO_COLLECTION:-isap}
+        --changes-collection ${ISAP_CHANGES_COLLECTION:-changes}
+        --assets-dir /isap_data
+        ${ISAP_YEAR:+--year ${ISAP_YEAR}}
+        ${ISAP_LIMIT:+--limit ${ISAP_LIMIT}}
+    environment:
+      ISAP_MONGO_DB: ${ISAP_MONGO_DB:-legal_acts}
+      ISAP_MONGO_COLLECTION: ${ISAP_MONGO_COLLECTION:-isap}
+      ISAP_CHANGES_COLLECTION: ${ISAP_CHANGES_COLLECTION:-changes}
+      ISAP_YEAR: ${ISAP_YEAR:-}
+      ISAP_LIMIT: ${ISAP_LIMIT:-}
+    volumes:
+      - hackaton_isap_data:/isap_data
+    networks:
+      - hackaton_net
+
+volumes:
+  hackaton_isap_data:
+    external: true
+
+networks:
+  hackaton_net:
+    external: true
+    name: hackaton_net

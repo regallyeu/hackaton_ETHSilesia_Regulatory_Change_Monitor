@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "alerts": "Alerts",
+    "isap": "ISAP Database",
+    "contracts": "Contracts",
+    "signedDocuments": "Signed Documents",
+    "certificates": "Certificates",
+    "compliance": "Compliance (RAG)"
+  },
+  "monitoring": {
+    "active": "Monitoring active"
+  },
+  "filters": {
+    "search": "Search",
+    "clearFilters": "Clear filters"
+  },
+  "actions": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "download": "Download",
+    "showAll": "Show all →",
+    "changeAnswer": "Change answer",
+    "collapse": "Collapse ▲",
+    "expand": "Expand ▼"
+  },
+  "pagination": {
+    "previous": "← Previous",
+    "next": "Next →"
+  },
+  "labels": {
+    "topics": "Topics",
+    "entities": "Entities",
+    "source": "Source",
+    "address": "Address",
+    "eli": "ELI",
+    "relevance": "Relevance"
+  }
+}

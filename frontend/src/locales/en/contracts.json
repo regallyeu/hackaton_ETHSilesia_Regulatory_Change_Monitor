@@ -1,0 +1,28 @@
+{
+  "page": {
+    "title": "Contracts",
+    "subtitle": "{{count}} monitored contracts",
+    "loadError": "Could not load contracts from the API."
+  },
+  "table": {
+    "contract": "Contract",
+    "type": "Type",
+    "validUntil": "Valid until",
+    "alerts": "Alerts"
+  },
+  "type": {
+    "PPA": "Power Purchase Agreement",
+    "grid_connection": "Grid connection",
+    "supply": "Energy supply",
+    "service": "Services"
+  },
+  "signed": {
+    "title": "Signed Documents",
+    "subtitle": "Documents cryptographically signed via blockchain.",
+    "empty": {
+      "title": "No signed documents.",
+      "hint": "Browse alerts and upload documents for analysis."
+    },
+    "signedAt": "Signed: {{date}}"
+  }
+}

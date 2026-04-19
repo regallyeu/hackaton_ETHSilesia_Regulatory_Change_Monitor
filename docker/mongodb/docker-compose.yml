@@ -1,0 +1,23 @@
+services:
+  mongodb:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - hackaton_net
+
+volumes:
+  mongo_data:
+
+networks:
+  hackaton_net:
+    name: hackaton_net
+    driver: bridge
